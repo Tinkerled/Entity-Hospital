@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c461fa3c59f34a679c38d17f03044dc9" Name="Diagram1">
+        <EntityTypeShape EntityType="NLHSystemModel.chambre" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.departement" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.docteur" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.dossierAdmission" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.lit" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.location" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.patient" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.role" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.sysdiagram" Width="1.5" PointX="7.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.traitement" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.typeChambre" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLHSystemModel.utilisateur" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="NLHSystemModel.FK_chambres_departement" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_chambres_typeChambre1" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_lit_chambres" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_docteur_departement" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_traitement_departement" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_docteur_utilisateurs" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_dossierAdmission_docteur" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_dossierAdmission_lit" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_dossierAdmission_location" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_dossierAdmission_patient" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_dossierAdmission_traitement" ManuallyRouted="false" />
+        <AssociationConnector Association="NLHSystemModel.FK_utilisateurs_roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
